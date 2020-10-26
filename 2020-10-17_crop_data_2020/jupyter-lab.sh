@@ -11,8 +11,9 @@ docker run \
     -e "GRANT_SUDO=yes" \
     -e DATA_DIR \
     -e USDAKEY \
-    -e STAGING_BUCKET \
-    -e TESTING \
+    -e ATHENA_RESULTS \
+    -e CROP_BUCKET \
+    -e AWS_LP \
     --name 2020-10-17_crop_data_2020_$(hostname)_$(id -u) \
     -w $PWD \
     -v $PWD:$PWD \
